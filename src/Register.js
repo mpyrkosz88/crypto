@@ -1,14 +1,12 @@
 import { Input, Grid, Button, Box } from "@mui/material";
 
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
-
-import { authActions } from "./store/auth-slice";
 
 import { useNavigate } from "react-router";
 
-const Login = () => {
-  const dispatch = useDispatch();
+const Register = () => {
+  // const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [enteredEmail, setEnteredEmail] = useState("");
@@ -45,42 +43,9 @@ const Login = () => {
     checkFormIsValid();
   });
 
-  // const login = () => {
-  //   let url =
-  //     "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCPeodVCCUJJK_vmRxJms3fK4Iu9dBRxVA";
-  //   const authData = {
-  //     email: enteredEmail,
-  //     password: enteredPassword,
-  //     returnSecureToken: true,
-  //   };
-  //   const requestOptions = {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(authData),
-  //   };
-  //   fetch(url, requestOptions)
-  //     .then((response) => {
-  //       if (response.ok) {
-  //         const token = response.idToken;
-  //         const localId = response.localId;
-  //         localStorage.setItem("token", token);
-  //         localStorage.setItem("localId", localId);
-  //         dispatch(authActions.logIn({ token, localId }));
-  //         navigate("/home");
-  //       } else {
-  //         return response.json().then((data) => {
-  //           console.log(data.error.message);
-  //         });
-  //       }
-  //     })
-  //     .catch((err) => console.log(err));
-  // };
-
-  const login = async () => {
+  const register = async () => {
     let url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCPeodVCCUJJK_vmRxJms3fK4Iu9dBRxVA";
+      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCPeodVCCUJJK_vmRxJms3fK4Iu9dBRxVA";
     const authData = {
       email: enteredEmail,
       password: enteredPassword,
@@ -101,13 +66,8 @@ const Login = () => {
           console.log(data.error.message);
         });
       }
-      const loginData = await response;
-      const token = loginData.idToken;
-      const localId = loginData.localId;
-      localStorage.setItem("token", token);
-      localStorage.setItem("localId", localId);
-      dispatch(authActions.logIn({ token, localId }));
-      navigate("/home");
+      navigate("/login");
+      return response.json().then((data) => console.log(data));
     } catch (error) {
       return error;
     }
@@ -118,7 +78,7 @@ const Login = () => {
       <Grid container>
         <Grid item xs={1} sm={2} md={4}></Grid>
         <Grid item xs={10} sm={8} md={4} container direction="column">
-          <Box component="form" autoComplete="off">
+          <Box component="form" autoComplete="on">
             <Input
               placeholder="Login"
               id="login"
@@ -144,9 +104,9 @@ const Login = () => {
                 color="primary"
                 variant="contained"
                 disabled={!formIsValid}
-                onClick={login}
+                onClick={register}
               >
-                Login
+                Register
               </Button>
             </Box>
           </Box>
@@ -157,4 +117,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

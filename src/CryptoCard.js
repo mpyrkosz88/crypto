@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { useState, useEffect } from "react";
 import {
   Box,
   Card,
@@ -13,26 +13,19 @@ import {
   Grid,
   Link,
   IconButton,
-} from "@material-ui/core";
+} from "@mui/material";
 
-import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
-import LanguageIcon from "@material-ui/icons/Language";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import TelegramIcon from "@material-ui/icons/Telegram";
-import AssessmentIcon from "@material-ui/icons/Assessment";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import LanguageIcon from "@mui/icons-material/Language";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import AssessmentIcon from "@mui/icons-material/Assessment";
 
 import { walletActions } from "./store/wallet-slice";
 import { productsActions } from "./store/products-slice";
 import { useSelector } from "react-redux";
 
-const useStyles = makeStyles({
-  spacing: {
-    margin: "0 10px",
-  },
-});
-
 const CryptoCard = (props) => {
-  const classes = useStyles();
   const {
     id,
     title,
@@ -48,12 +41,15 @@ const CryptoCard = (props) => {
     chart,
     vesting,
     inWallet,
-  } = props.item;
+    tokenId,
+  } = props.data;
 
   const dispatch = useDispatch();
   const isAuth = useSelector((state) => {
     return state.auth.isLoggedIn;
   });
+
+  const [currentPrice, setCurrentPrice] = useState("");
 
   const addToWallet = () => {
     dispatch(productsActions.addItemToWallet({ id }));
@@ -81,6 +77,35 @@ const CryptoCard = (props) => {
     dispatch(productsActions.removeItemFromWallet({ id }));
     dispatch(walletActions.removeItemFromWallet({ id }));
   };
+
+  const checkPrice = () => {
+    let url = `https://api.coingecko.com/api/v3/simple/price?ids=${tokenId}%2C&vs_currencies=usd%2C`;
+    const requestOptions = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    fetch(url, requestOptions)
+      .then((response) => {
+        if (response.ok) {
+          return response.json().then((data) => {
+            console.log(typeof data[tokenId].usd);
+            setCurrentPrice(data[tokenId].usd);
+          });
+        } else {
+          return response.json().then((data) => {
+            console.log(data.error.message);
+          });
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    console.log(checkPrice());
+    checkPrice();
+  }, []);
 
   let walletButton;
 
@@ -126,11 +151,7 @@ const CryptoCard = (props) => {
             <Typography variant="h6" component="h6">
               Round:
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              className={classes.spacing}
-            >
+            <Typography variant="body1" component="p" sx={{ margin: "0 10px" }}>
               {round}
             </Typography>
           </Grid>
@@ -138,11 +159,7 @@ const CryptoCard = (props) => {
             <Typography variant="h6" component="h6">
               Round price:
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              className={classes.spacing}
-            >
+            <Typography variant="body1" component="p" sx={{ margin: "0 10px" }}>
               {price}
             </Typography>
           </Grid>
@@ -150,11 +167,7 @@ const CryptoCard = (props) => {
             <Typography variant="h6" component="h6">
               Chain:
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              className={classes.spacing}
-            >
+            <Typography variant="body1" component="p" sx={{ margin: "0 10px" }}>
               {chain}
             </Typography>
           </Grid>
@@ -162,12 +175,16 @@ const CryptoCard = (props) => {
             <Typography variant="h6" component="h6">
               Listing date:
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              className={classes.spacing}
-            >
+            <Typography variant="body1" component="p" sx={{ margin: "0 10px" }}>
               {listingDate}
+            </Typography>
+          </Grid>
+          <Grid container alignItems="center">
+            <Typography variant="h6" component="h6">
+              Current price:
+            </Typography>
+            <Typography variant="body1" component="p" sx={{ margin: "0 10px" }}>
+              {currentPrice} $
             </Typography>
           </Grid>
           <Box m={2}>

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import CryptoCard from "./CryptoCard";
 // import data from "./data";
 
