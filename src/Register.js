@@ -44,8 +44,7 @@ const Register = () => {
   });
 
   const register = async () => {
-    let url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCPeodVCCUJJK_vmRxJms3fK4Iu9dBRxVA";
+    let url = process.env.REGISTER_API;
     const authData = {
       email: enteredEmail,
       password: enteredPassword,

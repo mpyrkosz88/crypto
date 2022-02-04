@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 import React from "react";
 import { Grid } from "@mui/material";
-import CryptoCard from "./CryptoCard";
+import WalletCard from "./WalletCard";
 // import data from "./data";
 
 const Wallet = () => {
@@ -15,8 +15,9 @@ const Wallet = () => {
     <Grid item container>
       <Grid item xs={false} sm={1} md={2}></Grid>
       <Grid item xs={12} sm={10} md={8} container spacing={4}>
-        {walletItems.map((item) => {
-          return <CryptoCard key={item.id} item={item} />;
+        {walletItems.map((data) => {
+          console.log(data);
+          return <WalletCard key={data.id} data={data} />;
         })}
       </Grid>
       <Grid item xs={false} sm={1} md={2}></Grid>

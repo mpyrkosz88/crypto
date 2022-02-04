@@ -64,7 +64,7 @@ const SearchInput = () => {
       <StyledInputBase
         placeholder="Search…"
         inputProps={{ "aria-label": "search" }}
-        value={enteredFilter}
+        value={enteredFilter.toLowerCase()}
         onChange={(e) => filter(e.target.value)}
       />
     </Search>

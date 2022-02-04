@@ -25,7 +25,7 @@ import { walletActions } from "./store/wallet-slice";
 import { productsActions } from "./store/products-slice";
 import { useSelector } from "react-redux";
 
-const CryptoCard = (props) => {
+const WalletCard = (props) => {
   const {
     id,
     title,
@@ -229,4 +229,4 @@ const CryptoCard = (props) => {
   );
 };
 
-export default CryptoCard;
+export default WalletCard;

@@ -79,8 +79,8 @@ const Login = () => {
   // };
 
   const login = async () => {
-    let url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCPeodVCCUJJK_vmRxJms3fK4Iu9dBRxVA";
+    let url = process.env.LOGIN_API;
+
     const authData = {
       email: enteredEmail,
       password: enteredPassword,

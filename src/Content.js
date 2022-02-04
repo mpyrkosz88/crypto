@@ -28,29 +28,6 @@ const Content = () => {
     }
   }, [dispatch, isInitial]);
 
-  // const checkPrice = () => {
-  //   const tokenId = "onering";
-  //   let url = `https://api.coingecko.com/api/v3/simple/price?ids=${tokenId}%2C&vs_currencies=usd%2C`;
-  //   const requestOptions = {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   };
-  //   fetch(url, requestOptions)
-  //     .then((response) => {
-  //       if (response.ok) {
-  //         const tokenId = "onering";
-  //         return response.json().then((data) => console.log(data[tokenId].usd));
-  //       } else {
-  //         return response.json().then((data) => {
-  //           console.log(data.error.message);
-  //         });
-  //       }
-  //     })
-  //     .catch((err) => console.log(err));
-  // };
-
   return (
     <Grid item container>
       <Grid item xs={false} sm={1} md={2}></Grid>

@@ -104,10 +104,5 @@
     "twitterPage" : "https://twitter.com/yarloo_rst",
     "vesting" : "_blank",
     "webPage" : "https://yarloo.io/"
-  } ],
-  "wallet" : [{
-    "id": 1,
-    "userId": "jakasnazwa",
-    "productId": 1
-  }]
+  } ]
 }

@@ -14,7 +14,7 @@ const productsSlice = createSlice({
       state.isInitial = false;
     },
     setEnteredFilter(state, action) {
-      state.enteredFilter = action.payload;
+      state.enteredFilter = action.payload.toLowerCase();
     },
     addItemToWallet(state, action) {
       const id = action.payload.id;
