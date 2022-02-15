@@ -13,19 +13,22 @@ import {
   Grid,
   Link,
   IconButton,
+  Input,
 } from "@mui/material";
 
+import EditIcon from "@mui/icons-material/Edit";
+import DoneIcon from "@mui/icons-material/Done";
+
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
-import LanguageIcon from "@mui/icons-material/Language";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import AssessmentIcon from "@mui/icons-material/Assessment";
+// import LanguageIcon from "@mui/icons-material/Language";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import TelegramIcon from "@mui/icons-material/Telegram";
+// import AssessmentIcon from "@mui/icons-material/Assessment";
 
 import { walletActions } from "./store/wallet-slice";
-import { productsActions } from "./store/products-slice";
-import { useSelector } from "react-redux";
 
 const WalletCard = (props) => {
+  console.log(props);
   const {
     id,
     title,
@@ -35,47 +38,32 @@ const WalletCard = (props) => {
     price,
     round,
     listingDate,
-    webPage,
-    twitterPage,
-    telegram,
-    chart,
     vesting,
-    inWallet,
     tokenId,
+    tokenHoldings,
   } = props.data;
 
   const dispatch = useDispatch();
-  const isAuth = useSelector((state) => {
-    return state.auth.isLoggedIn;
-  });
 
   const [currentPrice, setCurrentPrice] = useState("");
+  const [editTokens, setEditable] = useState(true);
+  const [enteredTokens, setEnteredTokens] = useState(tokenHoldings || "0");
 
-  const addToWallet = () => {
-    dispatch(productsActions.addItemToWallet({ id }));
-    dispatch(
-      walletActions.addItemToWallet({
-        id,
-        title,
-        tokenName,
-        chain,
-        imageUrl,
-        price,
-        round,
-        listingDate,
-        webPage,
-        twitterPage,
-        telegram,
-        chart,
-        vesting,
-        inWallet: true,
-      })
-    );
+  const tokensHandler = (event) => {
+    setEnteredTokens(event.target.value);
   };
 
   const removeFromWallet = () => {
-    dispatch(productsActions.removeItemFromWallet({ id }));
     dispatch(walletActions.removeItemFromWallet({ id }));
+  };
+
+  const editHandler = () => {
+    setEditable(!editTokens);
+  };
+
+  const addTokensToWallet = () => {
+    dispatch(walletActions.addTokensToWallet({ id, enteredTokens }));
+    editHandler();
   };
 
   const checkPrice = () => {
@@ -104,32 +92,6 @@ const WalletCard = (props) => {
   useEffect(() => {
     checkPrice();
   }, []);
-
-  let walletButton;
-
-  if (!inWallet) {
-    walletButton = (
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={addToWallet}
-        style={{ marginBottom: "12px" }}
-      >
-        Add to wallet
-      </Button>
-    );
-  } else {
-    walletButton = (
-      <Button
-        variant="contained"
-        color="secondary"
-        onClick={removeFromWallet}
-        style={{ marginBottom: "12px" }}
-      >
-        Remove from wallet
-      </Button>
-    );
-  }
 
   return (
     <Grid item xs={12} sm={6} md={4}>
@@ -185,12 +147,47 @@ const WalletCard = (props) => {
               {currentPrice} $
             </Typography>
           </Grid>
+          <Grid container alignItems="center">
+            <Typography variant="h6" component="h6">
+              Holdings:
+            </Typography>
+            {editTokens ? (
+              <Typography
+                variant="body1"
+                component="p"
+                sx={{
+                  margin: "0 10px",
+                  flexGrow: 1,
+                }}
+              >
+                {enteredTokens}
+              </Typography>
+            ) : (
+              <Input
+                placeholder={enteredTokens}
+                type="number"
+                sx={{
+                  flexGrow: 1,
+                }}
+                onChange={tokensHandler}
+                value={enteredTokens}
+              />
+            )}
+            {editTokens ? (
+              <EditIcon onClick={editHandler} />
+            ) : (
+              <DoneIcon onClick={addTokensToWallet} />
+            )}
+          </Grid>
           <Box m={2}>
             <Typography variant="h5" align="center">
-              Links
+              Your current value
+            </Typography>
+            <Typography variant="h6" align="center">
+              {currentPrice * enteredTokens} $
             </Typography>
           </Box>
-          <Grid container justifyContent="space-between">
+          {/* <Grid container justifyContent="space-between">
             <Link href={webPage} target="_blank">
               <LanguageIcon />
             </Link>
@@ -203,7 +200,7 @@ const WalletCard = (props) => {
             <Link href={chart} target="_blank">
               <AssessmentIcon />
             </Link>
-          </Grid>
+          </Grid> */}
         </CardContent>
         <CardActions>
           <Grid container justifyContent="space-evenly">
@@ -221,7 +218,14 @@ const WalletCard = (props) => {
                 Vesting
               </Link>
             </Button>
-            {isAuth ? walletButton : null}
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={removeFromWallet}
+              style={{ marginBottom: "12px" }}
+            >
+              Remove from wallet
+            </Button>
           </Grid>
         </CardActions>
       </Card>

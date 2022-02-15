@@ -16,16 +16,6 @@ const productsSlice = createSlice({
     setEnteredFilter(state, action) {
       state.enteredFilter = action.payload.toLowerCase();
     },
-    addItemToWallet(state, action) {
-      const id = action.payload.id;
-      const existingItem = state.items.find((item) => item.id === id);
-      existingItem.inWallet = true;
-    },
-    removeItemFromWallet(state, action) {
-      const id = action.payload.id;
-      const existingItem = state.items.find((item) => item.id === id);
-      existingItem.inWallet = false;
-    },
   },
 });
 export const productsActions = productsSlice.actions;

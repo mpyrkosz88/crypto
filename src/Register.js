@@ -44,7 +44,7 @@ const Register = () => {
   });
 
   const register = async () => {
-    let url = process.env.REGISTER_API;
+    let url = process.env.REACT_APP_REGISTER_API;
     const authData = {
       email: enteredEmail,
       password: enteredPassword,
@@ -66,7 +66,21 @@ const Register = () => {
         });
       }
       navigate("/login");
-      return response.json().then((data) => console.log(data));
+      // return response.json().then((data) => {
+      //   const token = data.idToken;
+      //   const userId = data.localId;
+      //   fetch(
+      //     `https://crypto-vesting-default-rtdb.europe-west1.firebasedatabase.app/users.json?auth=` +
+      //       token,
+      //     {
+      //       method: "POST",
+      //       body: JSON.stringify({ userId: userId }),
+      //     }
+      //   )
+      //     .then((response) => response.json())
+      //     .then((json) => console.log(json))
+      //     .catch((err) => console.log(err));
+      // });
     } catch (error) {
       return error;
     }

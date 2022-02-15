@@ -15,7 +15,7 @@ const Login = () => {
   const [emailIsValid, setEmailIsValid] = useState(true);
   const [enteredPassword, setEnteredPassword] = useState("");
   const [passwordIsValid, setPasswordIsValid] = useState(true);
-  const [formIsValid, setFormIsValid] = useState(false);
+  const [formIsValid, setFormIsValid] = useState(true);
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
@@ -45,41 +45,8 @@ const Login = () => {
     checkFormIsValid();
   });
 
-  // const login = () => {
-  //   let url =
-  //     "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCPeodVCCUJJK_vmRxJms3fK4Iu9dBRxVA";
-  //   const authData = {
-  //     email: enteredEmail,
-  //     password: enteredPassword,
-  //     returnSecureToken: true,
-  //   };
-  //   const requestOptions = {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(authData),
-  //   };
-  //   fetch(url, requestOptions)
-  //     .then((response) => {
-  //       if (response.ok) {
-  //         const token = response.idToken;
-  //         const localId = response.localId;
-  //         localStorage.setItem("token", token);
-  //         localStorage.setItem("localId", localId);
-  //         dispatch(authActions.logIn({ token, localId }));
-  //         navigate("/home");
-  //       } else {
-  //         return response.json().then((data) => {
-  //           console.log(data.error.message);
-  //         });
-  //       }
-  //     })
-  //     .catch((err) => console.log(err));
-  // };
-
   const login = async () => {
-    let url = process.env.LOGIN_API;
+    let url = process.env.REACT_APP_LOGIN_API;
 
     const authData = {
       email: enteredEmail,
@@ -101,7 +68,7 @@ const Login = () => {
           console.log(data.error.message);
         });
       }
-      const loginData = await response;
+      const loginData = await response.json();
       const token = loginData.idToken;
       const localId = loginData.localId;
       localStorage.setItem("token", token);
@@ -109,6 +76,7 @@ const Login = () => {
       dispatch(authActions.logIn({ token, localId }));
       navigate("/home");
     } catch (error) {
+      console.log(error);
       return error;
     }
   };

@@ -22,7 +22,6 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 
 import { walletActions } from "./store/wallet-slice";
-import { productsActions } from "./store/products-slice";
 import { useSelector } from "react-redux";
 
 const CryptoCard = (props) => {
@@ -40,7 +39,6 @@ const CryptoCard = (props) => {
     telegram,
     chart,
     vesting,
-    inWallet,
     tokenId,
   } = props.data;
 
@@ -52,29 +50,12 @@ const CryptoCard = (props) => {
   const [currentPrice, setCurrentPrice] = useState("");
 
   const addToWallet = () => {
-    dispatch(productsActions.addItemToWallet({ id }));
-    dispatch(
-      walletActions.addItemToWallet({
-        id,
-        title,
-        tokenName,
-        chain,
-        imageUrl,
-        price,
-        round,
-        listingDate,
-        webPage,
-        twitterPage,
-        telegram,
-        chart,
-        vesting,
-        inWallet: true,
-      })
-    );
+    // dispatch(productsActions.addItemToWallet({ id }));
+    dispatch(walletActions.addItemToWallet(props.data));
   };
 
   const removeFromWallet = () => {
-    dispatch(productsActions.removeItemFromWallet({ id }));
+    // dispatch(productsActions.removeItemFromWallet({ id }));
     dispatch(walletActions.removeItemFromWallet({ id }));
   };
 
@@ -107,7 +88,7 @@ const CryptoCard = (props) => {
 
   let walletButton;
 
-  if (!inWallet) {
+  if (props.inWallet) {
     walletButton = (
       <Button
         variant="contained"

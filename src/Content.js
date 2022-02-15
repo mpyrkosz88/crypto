@@ -5,6 +5,8 @@ import { Grid } from "@mui/material";
 import CryptoCard from "./CryptoCard";
 
 import { fetchProductData } from "./store/products-actions";
+import { sendWalletData } from "./store/wallet-actions";
+import { fetchWalletData } from "./store/wallet-actions";
 
 const Content = () => {
   const dispatch = useDispatch();
@@ -20,11 +22,20 @@ const Content = () => {
   const products = productItems.filter((item) =>
     item.title.toLowerCase().includes(enteredFilter)
   );
+  const wallet = useSelector((state) => {
+    return state.wallet;
+  });
 
   useEffect(() => {
-    // checkPrice();
+    if (wallet.changed) {
+      dispatch(sendWalletData(wallet.items));
+    }
+  }, [wallet, dispatch]);
+
+  useEffect(() => {
     if (isInitial) {
       dispatch(fetchProductData());
+      dispatch(fetchWalletData());
     }
   }, [dispatch, isInitial]);
 
@@ -41,7 +52,14 @@ const Content = () => {
         columnSpacing={2}
       >
         {products.map((data) => {
-          return <CryptoCard key={data.id} data={data} />;
+          const inWallet = wallet.items.find((item) => item.id === data.id);
+          return (
+            <CryptoCard
+              key={data.id}
+              data={data}
+              inWallet={inWallet ? false : true}
+            />
+          );
         })}
       </Grid>
       <Grid item xs={false} sm={1} md={2}></Grid>
