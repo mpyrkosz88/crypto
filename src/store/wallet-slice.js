@@ -1,4 +1,4 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const walletSlice = createSlice({
   name: "wallet",
@@ -28,6 +28,7 @@ const walletSlice = createSlice({
           round: newItem.round,
           listingDate: newItem.listingDate,
           inWallet: newItem.inWallet,
+          vesting: newItem.vesting,
         });
       }
     },

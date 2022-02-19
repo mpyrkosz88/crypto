@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
       <Box sx={{ display: { xs: "none", md: "flex" } }}>
-        <TopNav isAuth={isAuth} logout={logout} />;
+        <TopNav isAuth={isAuth} logout={logout} />
       </Box>
       <Box sx={{ display: { xs: "flex", md: "none" } }}>
         <SideNav isAuth={isAuth} logout={logout} />

@@ -3,10 +3,10 @@ import { useEffect } from "react";
 
 import React from "react";
 import { Grid } from "@mui/material";
-import WalletCard from "./WalletCard";
+import WalletCard from "../WalletCard";
 
-import { fetchWalletData } from "./store/wallet-actions";
-import { sendWalletData } from "./store/wallet-actions";
+import { fetchWalletData } from "../store/wallet-actions";
+import { sendWalletData } from "../store/wallet-actions";
 
 const Wallet = () => {
   const dispatch = useDispatch();

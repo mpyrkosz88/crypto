@@ -11,24 +11,18 @@ import {
   Button,
   Typography,
   Grid,
-  Link,
   IconButton,
   Input,
 } from "@mui/material";
 
 import EditIcon from "@mui/icons-material/Edit";
 import DoneIcon from "@mui/icons-material/Done";
-
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
-// import LanguageIcon from "@mui/icons-material/Language";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-// import TelegramIcon from "@mui/icons-material/Telegram";
-// import AssessmentIcon from "@mui/icons-material/Assessment";
 
+import VestingPage from "./VestingPage";
 import { walletActions } from "./store/wallet-slice";
 
 const WalletCard = (props) => {
-  console.log(props);
   const {
     id,
     title,
@@ -38,9 +32,9 @@ const WalletCard = (props) => {
     price,
     round,
     listingDate,
-    vesting,
     tokenId,
     tokenHoldings,
+    vesting,
   } = props.data;
 
   const dispatch = useDispatch();
@@ -48,6 +42,16 @@ const WalletCard = (props) => {
   const [currentPrice, setCurrentPrice] = useState("");
   const [editTokens, setEditable] = useState(true);
   const [enteredTokens, setEnteredTokens] = useState(tokenHoldings || "0");
+
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const tokensHandler = (event) => {
     setEnteredTokens(event.target.value);
@@ -78,7 +82,9 @@ const WalletCard = (props) => {
       .then((response) => {
         if (response.ok) {
           return response.json().then((data) => {
-            setCurrentPrice(data[tokenId].usd);
+            if (tokenId) {
+              setCurrentPrice(data[tokenId].usd);
+            }
           });
         } else {
           return response.json().then((data) => {
@@ -174,9 +180,13 @@ const WalletCard = (props) => {
               />
             )}
             {editTokens ? (
-              <EditIcon onClick={editHandler} />
+              <IconButton onClick={editHandler}>
+                <EditIcon />
+              </IconButton>
             ) : (
-              <DoneIcon onClick={addTokensToWallet} />
+              <IconButton onClick={addTokensToWallet}>
+                <DoneIcon />
+              </IconButton>
             )}
           </Grid>
           <Box m={2}>
@@ -187,37 +197,20 @@ const WalletCard = (props) => {
               {currentPrice * enteredTokens} $
             </Typography>
           </Box>
-          {/* <Grid container justifyContent="space-between">
-            <Link href={webPage} target="_blank">
-              <LanguageIcon />
-            </Link>
-            <Link href={twitterPage} target="_blank">
-              <TwitterIcon />
-            </Link>
-            <Link href={telegram} target="_blank">
-              <TelegramIcon />
-            </Link>
-            <Link href={chart} target="_blank">
-              <AssessmentIcon />
-            </Link>
-          </Grid> */}
         </CardContent>
+
         <CardActions>
           <Grid container justifyContent="space-evenly">
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginBottom: "12px" }}
-            >
-              <Link
-                href={vesting}
-                target="_blank"
-                color="inherit"
-                underline="none"
+            {vesting ? (
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginBottom: "12px" }}
+                onClick={handleClickOpen}
               >
                 Vesting
-              </Link>
-            </Button>
+              </Button>
+            ) : null}
             <Button
               variant="contained"
               color="secondary"
@@ -227,6 +220,9 @@ const WalletCard = (props) => {
               Remove from wallet
             </Button>
           </Grid>
+          {vesting ? (
+            <VestingPage open={open} onClose={handleClose} vesting={vesting} />
+          ) : null}
         </CardActions>
       </Card>
     </Grid>

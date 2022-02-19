@@ -1,0 +1,107 @@
+{
+  "products" : [ {
+    "chain" : "Polygon",
+    "chart" : "https://polygon.poocoin.app/tokens/0x8839e639f210b80ffea73aedf51baed8dac04499",
+    "id" : 1,
+    "imageUrl" : "https://launchpadcommon.blob.core.windows.net/images/decentraweb_logo.png",
+    "listingDate" : "10.10.2021",
+    "price" : "0,1$",
+    "round" : "Private",
+    "telegram" : "https://t.me/decentraweb",
+    "title" : "Decentra Web",
+    "tokenId" : "decentraweb",
+    "tokenName" : "DWEB",
+    "twitterPage" : "https://twitter.com/decentra_web",
+    "vesting" : {
+      "claimData": [
+      {
+        "date": "2021, 10, 10",
+        "amount": "10%",
+        "type": "airdrop"
+      },
+      {
+        "date": "2021, 12, 10",
+        "amount": "lineary",
+        "type": "claim "
+      },
+      {
+        "date": "2022, 4, 10",
+        "amount": "",
+        "type": "vesting end"
+      }
+    ],
+    "vestingPage": "https://vesting.decentraweb.org/"
+  },
+    "webPage" : "https://decentraweb.org/"
+  }, {
+    "chain" : "Polygon",
+    "chart" : "https://polygon.poocoin.app/tokens/0x8839e639f210b80ffea73aedf51baed8dac04499",
+    "id" : 2,
+    "imageUrl" : "https://launchpadcommon.blob.core.windows.net/images/decentraweb_logo.png",
+    "listingDate" : "10.10.2021",
+    "price" : "0,12$",
+    "round" : "Private",
+    "telegram" : "https://t.me/decentraweb",
+    "title" : "Decentra Web",
+    "tokenId" : "decentraweb",
+    "tokenName" : "DWEB",
+    "twitterPage" : "https://twitter.com/decentra_web",
+    "vesting" : {
+      "claimData":  [
+        {
+          "date": "2021, 10, 10",
+          "amount": "10%",
+          "type": "airdrop"
+        },
+        {
+          "date": "2021, 12, 10",
+          "amount": "lineary",
+          "type": "claim"
+        },
+        {
+          "date": "2022, 3, 10",
+          "amount": "",
+          "type": "vesting end"
+        }
+      ],
+    "vestingPage": "https://vesting.decentraweb.org/"
+  },
+    "webPage" : "https://decentraweb.org/"
+  },  {
+    "chain" : "Polygon",
+    "chart" : "https://polygon.poocoin.app/tokens/0x311434160d7537be358930def317afb606c0d737",
+    "id" : 3,
+    "imageUrl" : "https://launchpadcommon.blob.core.windows.net/images/NAKAMOTo-Logo-Large.png",
+    "listingDate" : "15.10.2021",
+    "price" : "0,14$",
+    "round" : "Private 2",
+    "telegram" : "https://t.me/NakamotoGames",
+    "title" : "Nakamoto Games",
+    "tokenId" : "nakamoto-games",
+    "tokenName" : "NAKA",
+    "twitterPage" : "https://twitter.com/NakamotoGames",
+    "vesting" : {
+      "claimData": [
+        {
+          "date": "2021, 10, 10",
+          "amount": "10%",
+          "type": "airdrop"
+        },
+        {
+          "date": "2021, 12, 10",
+          "amount": "10%",
+          "type": "airdrop"
+        },
+        {
+          "date": "2022, 3, 10",
+          "amount": "",
+          "type": "vesting end"
+        }
+      ],
+    "vestingPage": null
+  },
+    "webPage" : "https://nakamoto.games/"
+  }
+
+]
+}

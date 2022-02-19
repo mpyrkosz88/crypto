@@ -1,9 +1,10 @@
 import { Input, Grid, Button, Box } from "@mui/material";
 
-import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 
-import { authActions } from "./store/auth-slice";
+import { useDispatch } from "react-redux";
+
+import { sendLoginData } from "./store/auth-actions";
 
 import { useNavigate } from "react-router";
 
@@ -45,40 +46,12 @@ const Login = () => {
     checkFormIsValid();
   });
 
-  const login = async () => {
-    let url = process.env.REACT_APP_LOGIN_API;
-
-    const authData = {
-      email: enteredEmail,
-      password: enteredPassword,
-      returnSecureToken: true,
-    };
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(authData),
-    };
-
-    try {
-      const response = await fetch(url, requestOptions);
-      if (!response.ok) {
-        return response.json().then((data) => {
-          console.log(data.error.message);
-        });
+  const login = () => {
+    dispatch(sendLoginData(enteredEmail, enteredPassword)).then((response) => {
+      if (response) {
+        navigate("/home");
       }
-      const loginData = await response.json();
-      const token = loginData.idToken;
-      const localId = loginData.localId;
-      localStorage.setItem("token", token);
-      localStorage.setItem("localId", localId);
-      dispatch(authActions.logIn({ token, localId }));
-      navigate("/home");
-    } catch (error) {
-      console.log(error);
-      return error;
-    }
+    });
   };
 
   return (

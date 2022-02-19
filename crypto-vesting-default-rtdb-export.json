@@ -1,0 +1,1590 @@
+{
+  "products": [
+    {
+      "chain": "Polygon",
+      "chart": "https://polygon.poocoin.app/tokens/0x8839e639f210b80ffea73aedf51baed8dac04499",
+      "id": 1,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/decentraweb_logo.png",
+      "listingDate": "10.10.2021",
+      "price": "0,1$",
+      "round": "Private",
+      "telegram": "https://t.me/decentraweb",
+      "title": "Decentra Web",
+      "tokenId": "decentraweb",
+      "tokenName": "DWEB",
+      "twitterPage": "https://twitter.com/decentra_web",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 12, 10",
+            "amount": "lineary",
+            "type": "claim "
+          },
+          {
+            "date": "2022, 4, 10",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://vesting.decentraweb.org/"
+      },
+      "webPage": "https://decentraweb.org/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://polygon.poocoin.app/tokens/0x8839e639f210b80ffea73aedf51baed8dac04499",
+      "id": 2,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/decentraweb_logo.png",
+      "listingDate": "10.10.2021",
+      "price": "0,12$",
+      "round": "Private",
+      "telegram": "https://t.me/decentraweb",
+      "title": "Decentra Web",
+      "tokenId": "decentraweb",
+      "tokenName": "DWEB",
+      "twitterPage": "https://twitter.com/decentra_web",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 12, 10",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 3, 10",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://vesting.decentraweb.org/"
+      },
+      "webPage": "https://decentraweb.org/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://polygon.poocoin.app/tokens/0x311434160d7537be358930def317afb606c0d737",
+      "id": 3,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/NAKAMOTo-Logo-Large.png",
+      "listingDate": "15.10.2021",
+      "price": "0,14$",
+      "round": "Private 1",
+      "telegram": "https://t.me/NakamotoGames",
+      "title": "Nakamoto Games",
+      "tokenId": "nakamoto-games",
+      "tokenName": "NAKA",
+      "twitterPage": "https://twitter.com/NakamotoGames",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 11, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 12, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 01, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 02, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 03, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 04, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 05, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 06, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 07, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://nakamoto.games/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://polygon.poocoin.app/tokens/0x311434160d7537be358930def317afb606c0d737",
+      "id": 4,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/NAKAMOTo-Logo-Large.png",
+      "listingDate": "15.10.2021",
+      "price": "0,15333$",
+      "round": "Private 2",
+      "telegram": "https://t.me/NakamotoGames",
+      "title": "Nakamoto Games",
+      "tokenId": "nakamoto-games",
+      "tokenName": "NAKA",
+      "twitterPage": "https://twitter.com/NakamotoGames",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 11, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 12, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 01, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 02, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 03, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 04, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 05, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 06, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 07, 15",
+            "amount": "10%",
+            "type": "airdrop"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://nakamoto.games/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://polygon.poocoin.app/tokens/0x311434160d7537be358930def317afb606c0d737",
+      "id": 5,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/NAKAMOTo-Logo-Large.png",
+      "listingDate": "10.11.2021",
+      "price": "0,18$",
+      "round": "IDO",
+      "telegram": "https://t.me/NakamotoGames",
+      "title": "Nakamoto Games",
+      "tokenId": "nakamoto-games",
+      "tokenName": "NAKA",
+      "twitterPage": "https://twitter.com/NakamotoGames",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 15",
+            "amount": "50%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 11, 15",
+            "amount": "25%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 12, 15",
+            "amount": "25%",
+            "type": "airdrop"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://nakamoto.games/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x68a4757df43546c4d83eeed05e8fd92cf6446dfc",
+      "id": 6,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/arcadenet_logo.png",
+      "listingDate": "06.12.2021",
+      "price": "0,035$",
+      "round": "Private",
+      "telegram": "https://t.me/ArcadeNetworkOfficial",
+      "title": "Arcade Network",
+      "tokenId": "arcade",
+      "tokenName": "ARC",
+      "twitterPage": "https://twitter.com/ArcadeNetwork_",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 6",
+            "amount": "7%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 12, 7",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 9, 7",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://portal.arcadenet.io/"
+      },
+      "webPage": "https://arcadenet.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x958b2ea8ef2798bd7270cd757a8756872a6358a2",
+      "id": 7,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/fomo-logo.jpg",
+      "listingDate": "15.10.2021",
+      "price": "0,01$",
+      "round": "IDO",
+      "telegram": "https://t.me/FOMO_Chronicles",
+      "title": "FOMO Chronicles",
+      "tokenId": "fomo-chronicles-manga",
+      "tokenName": "OTAKU",
+      "twitterPage": "https://twitter.com/FomoChronicles",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 15",
+            "amount": "20%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 11, 22",
+            "amount": "40%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2021, 12, 22",
+            "amount": "40%",
+            "type": "airdropp"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://fomochronicles.com/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x2dc3a32895d13732a151a17c0f40e695c73ad797",
+      "id": 8,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/yarloo-logo.png",
+      "listingDate": "27.10.2021",
+      "price": "0,25$",
+      "round": "Private",
+      "telegram": "https://t.me/yarloochat",
+      "title": "Yarloo",
+      "tokenId": "yarloo",
+      "tokenName": "YARL",
+      "twitterPage": "https://twitter.com/yarloo_rst",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 10, 27",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 01, 27",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 11, 27",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://yarloo.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0xf3a319f5812d713433241fcc253b79678d0ba5cd",
+      "id": 9,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/scotty_logo.png",
+      "listingDate": "10.11.2021",
+      "price": "0,03$",
+      "round": "Private",
+      "telegram": "https://t.me/ScottyBeamChat",
+      "title": "Scotty Beam",
+      "tokenId": "scotty-beam",
+      "tokenName": "SCOTTY",
+      "twitterPage": "https://twitter.com/ScottyBeamIO",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 11, 10",
+            "amount": "5%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 11, 11",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 11, 11",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://claim.scottybeam.io/"
+      },
+      "webPage": "https://scottybeam.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "_blank",
+      "id": 10,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/animalia_logo.png",
+      "listingDate": "TBA",
+      "price": "0,08$",
+      "round": "Private",
+      "telegram": "https://t.me/Animalia_ANIM",
+      "title": "Animalia",
+      "tokenId": "animalia",
+      "tokenName": "ANIM",
+      "twitterPage": "https://twitter.com/Animalia_token",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://animalia.games/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "_blank",
+      "id": 11,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/animalia_logo.png",
+      "listingDate": "TBA",
+      "price": "0,14$",
+      "round": "IDO",
+      "telegram": "https://t.me/Animalia_ANIM",
+      "title": "Animalia",
+      "tokenId": "animalia",
+      "tokenName": "ANIM",
+      "twitterPage": "https://twitter.com/Animalia_token",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://animalia.games/"
+    },
+    {
+      "chain": "ERC-20",
+      "chart": "https://www.mexc.com/exchange/NIFT_USDT",
+      "id": 12,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/niftify-logo.png",
+      "listingDate": "18.11.2021",
+      "price": "0,2$",
+      "round": "Pre-public A",
+      "telegram": "https://t.me/niftifycommunity",
+      "title": "Niftify",
+      "tokenId": "niftify",
+      "tokenName": "NIFT",
+      "twitterPage": "https://twitter.com/Niftify_io",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 11, 18",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 09, 18",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://niftify.xportal.app/vault"
+      },
+      "webPage": "https://www.niftify.io/"
+    },
+    {
+      "chain": "ERC-20",
+      "chart": "https://www.mexc.com/exchange/NIFT_USDT",
+      "id": 13,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/niftify-logo.png",
+      "listingDate": "18.11.2021",
+      "price": "0,25$",
+      "round": "Pre-public A",
+      "telegram": "https://t.me/niftifycommunity",
+      "title": "Niftify",
+      "tokenId": "niftify",
+      "tokenName": "NIFT",
+      "twitterPage": "https://twitter.com/Niftify_io",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 11, 18",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 07, 18",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://niftify.xportal.app/vault"
+      },
+      "webPage": "https://www.niftify.io/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://www.dextools.io/app/polygon/pair-explorer/0x88b48ef8cdab9f48db44bd2e7af7b725a41bd6a9",
+      "id": 14,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/kitsumon-logo.webp",
+      "listingDate": "10.12.2021",
+      "price": "0.00012$",
+      "round": "Private",
+      "telegram": "https://t.me/Kitsumon",
+      "title": "Kitsumon",
+      "tokenId": "kitsumon",
+      "tokenName": "KMC",
+      "twitterPage": "https://twitter.com/kitsumonworld",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 10",
+            "amount": "7,5%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 02, 10",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 10, 10",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://kitsumon.com/vesting"
+      },
+      "webPage": "https://kitsumon.com/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "https://www.dextools.io/app/polygon/pair-explorer/0x88b48ef8cdab9f48db44bd2e7af7b725a41bd6a9",
+      "id": 15,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/kitsumon-logo.webp",
+      "listingDate": "10.12.2021",
+      "price": "0.00018$",
+      "round": "IDO",
+      "telegram": "https://t.me/Kitsumon",
+      "title": "Kitsumon",
+      "tokenId": "kitsumon",
+      "tokenName": "KMC",
+      "twitterPage": "https://twitter.com/kitsumonworld",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 10",
+            "amount": "15%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 02, 10",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 08, 10",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://kitsumon.com/vesting"
+      },
+      "webPage": "https://kitsumon.com/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x34b0d3a8e256778e65b2243583f6ee3b2b905217",
+      "id": 16,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/cheesus-logo.png",
+      "listingDate": "27.01.2021",
+      "price": "0.038$",
+      "round": "IDO",
+      "telegram": "https://t.me/cheesus_MAIN_eng",
+      "title": "Cheesus DeFi",
+      "tokenId": "cheesus",
+      "tokenName": "DRATE",
+      "twitterPage": "https://twitter.com/CheesusDeFi",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 01, 27",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 02, 27",
+            "amount": "30%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 03, 27",
+            "amount": "30%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 04, 27",
+            "amount": "10%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": "https://vesting.cheesus.ai/"
+      },
+      "webPage": "https://cheesus.ai/en/main"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0xad89287af09fd6c877606aa64c5a2854b5d5ff22",
+      "id": 17,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/anomus-logo.jpg",
+      "listingDate": "28.11.2021",
+      "price": "0.003$",
+      "round": "IDO",
+      "telegram": "https://t.me/anomuspublic",
+      "title": "Anomus",
+      "tokenId": "anomus-coin",
+      "tokenName": "ANOM",
+      "twitterPage": "https://twitter.com/MrAnomus",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 11, 28",
+            "amount": "33,3%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 12, 28",
+            "amount": "33,3%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 01, 28",
+            "amount": "33,3%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://www.anomus.io/"
+    },
+
+    {
+      "chain": "Solana",
+      "chart": "https://www.mexc.com/exchange/CHICKS_USDT",
+      "id": 18,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/solchicks-logo.png",
+      "listingDate": "13.12.2021",
+      "price": "0.05$",
+      "round": "IDO",
+      "telegram": "https://t.me/solchicksnft",
+      "title": "Solchicks",
+      "tokenId": "solchicks-token",
+      "tokenName": "CHICKS",
+      "twitterPage": "https://twitter.com/SolChicksNFT",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 13",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 01, 13",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 02, 13",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 03, 13",
+            "amount": "25%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": "https://claim.solchicks.io/"
+      },
+      "webPage": "https://www.solchicks.io/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "_blank",
+      "id": 19,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/kaizen-finance-logo.png",
+      "listingDate": "TBA",
+      "price": "0.04$",
+      "round": "FLASH IDO Premium only",
+      "telegram": "https://t.me/KaizenFinanceOfficial",
+      "title": "Kaizen Finance",
+      "tokenId": "",
+      "tokenName": "KZEN",
+      "twitterPage": "https://twitter.com/kaizen_finance",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://kaizen.finance/"
+    },
+    {
+      "chain": "ERC-20",
+      "chart": "_blank",
+      "id": 20,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/geojam-logo.webp",
+      "listingDate": "TBA",
+      "price": "0.005$",
+      "round": "Public",
+      "telegram": "https://t.me/geojamofficial",
+      "title": "GeoJAM",
+      "tokenId": "",
+      "tokenName": "JAM",
+      "twitterPage": "https://twitter.com/geojamofficial",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://geojam.com/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "_blank",
+      "id": 21,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/spark-era-2.png",
+      "listingDate": "TBA",
+      "price": "0.008$",
+      "round": "Public",
+      "telegram": "https://t.me/fireworkgames_group",
+      "title": "Spark Era",
+      "tokenId": "",
+      "tokenName": "FIRE",
+      "twitterPage": "https://twitter.com/FireworkGames",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://intro.firework.games/SparkEra"
+    },
+    {
+      "chain": "Solana",
+      "chart": "https://www.mexc.com/exchange/SOLX_USDT",
+      "id": 22,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/soldex-logo.jpg",
+      "listingDate": "13.12.2021",
+      "price": "0.05$",
+      "round": "IDO",
+      "telegram": "https://t.me/Soldexai",
+      "title": "Soldex.ai",
+      "tokenId": "soldex",
+      "tokenName": "SOLX",
+      "twitterPage": "https://twitter.com/soldexai",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 10",
+            "amount": "20%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 01, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 02, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 03, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 04, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 05, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 06, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 07, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          },
+          {
+            "date": "2022, 08, 10",
+            "amount": "10%",
+            "type": "airdrop"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://soldex.ai/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://poocoin.app/tokens/0x63129aa653e414a174202d5d6670038e409d64d8",
+      "id": 23,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/gadgetwar-logo.png",
+      "listingDate": "05.02.2022",
+      "price": "0.01$",
+      "round": "IDO",
+      "telegram": "https://t.me/gwofficialcommunity",
+      "title": "Gadget War",
+      "tokenId": "",
+      "tokenName": "GWAR",
+      "twitterPage": "https://twitter.com/wargadget",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 03, 05",
+            "amount": "20%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 04, 05",
+            "amount": "20%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 05, 05",
+            "amount": "20%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 06, 05",
+            "amount": "20%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 07, 05",
+            "amount": "20%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://www.gadgetwar.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0xcd109e5ae188af3c517b12af867952379f615b22",
+      "id": 24,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/hololoot-logo.jpg",
+      "listingDate": "13.12.2021",
+      "price": "0.2$",
+      "round": "PUBLIC",
+      "telegram": "https://t.me/hololoot_chat",
+      "title": "Hololoot",
+      "tokenId": "hololoot",
+      "tokenName": "HOL",
+      "twitterPage": "https://twitter.com/hololoot",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 13",
+            "amount": "30%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 12, 14",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 09, 14",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://claiming.hololoot.io/"
+      },
+      "webPage": "https://www.hololoot.io/"
+    },
+    {
+      "chain": "Solana",
+      "chart": "https://birdeye.so/token/3CKQgrcvwhvFqVXXxLTb1u262nh26SJ3uutkSCTtbZxH",
+      "id": 25,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/Tribe-Land-logo.jpg",
+      "listingDate": "19.12.2021",
+      "price": "0.01$",
+      "round": "Flash IDO Premium",
+      "telegram": "https://t.me/tribe_land",
+      "title": "Tribe Land",
+      "tokenId": "tribeland",
+      "tokenName": "TRBL",
+      "twitterPage": "https://twitter.com/tribe_land",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 19",
+            "amount": "100%",
+            "type": "airdrop"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://tribeland.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://poocoin.app/tokens/0x32ff208a18a5fbc81f6fd262020b1415bfcb3b33",
+      "id": 26,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/GOinfluencer-20.png",
+      "listingDate": "17.12.2021 ",
+      "price": "0.01$",
+      "round": "Public",
+      "telegram": "https://t.me/GOinfluencer_Official",
+      "title": "GOinfluencer",
+      "tokenId": "goin",
+      "tokenName": "GOIN",
+      "twitterPage": "https://twitter.com/GO_Influencer",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 17",
+            "amount": "50%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 01, 17",
+            "amount": "50%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://www.goinfluencer.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x4407dddde739d77376e4525f6e23d044ecada3ad",
+      "id": 27,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/roboots-logo.png",
+      "listingDate": "16.12.2021",
+      "price": "0.0035$",
+      "round": "Flash Sale Premium",
+      "telegram": "https://t.me/RobootsCommunity",
+      "title": "Roboots",
+      "tokenId": "roboots",
+      "tokenName": "RBO",
+      "twitterPage": "https://twitter.com/robootsio",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 16",
+            "amount": "10%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 12, 17",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 09, 16",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://www.roboots.io/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "_blank",
+      "id": 28,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/uponly-logo.png",
+      "listingDate": "TBA",
+      "price": "0.15$",
+      "round": "Private 1&2",
+      "telegram": "https://t.me/UpOnlyOfficial",
+      "title": "UpOnly!",
+      "tokenId": "",
+      "tokenName": "UPO",
+      "twitterPage": "https://twitter.com/UpOnlyOfficial",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "5%",
+            "type": "TBA"
+          },
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://uponly.com/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "_blank",
+      "id": 29,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/uponly-logo.png",
+      "listingDate": "TBA",
+      "price": "0,16$",
+      "round": "IDO Premium ONLY",
+      "telegram": "https://t.me/UpOnlyOfficial",
+      "title": "UpOnly!",
+      "tokenId": "",
+      "tokenName": "UPO",
+      "twitterPage": "https://twitter.com/UpOnlyOfficial",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "5%",
+            "type": "TBA"
+          },
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://uponly.com/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0xa4802e4ffbadd6027cab9abdb809bbc9f061cf69",
+      "id": 30,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/cherry_logo.svg",
+      "listingDate": "26.12.2021",
+      "price": "0.036$",
+      "round": "Public",
+      "telegram": "https://t.me/cherrynetwork",
+      "title": "Cherry Network",
+      "tokenId": "cherry-network",
+      "tokenName": "CHER",
+      "twitterPage": "https://twitter.com/Cherry_Network",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 24",
+            "amount": "100%",
+            "type": "airdrop"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://www.cherry.network/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x737a2f90e40c751727d68cc3a37fb0b0c7030271",
+      "id": 31,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/battlesaga-logo.png",
+      "listingDate": "23.12.2021",
+      "price": "0.12$",
+      "round": "IDO",
+      "telegram": "https://t.me/battlesaga_announcements",
+      "title": "Battle Saga",
+      "tokenId": "battle-saga",
+      "tokenName": "BTL",
+      "twitterPage": "https://twitter.com/BattleSagaio",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 23",
+            "amount": "10%",
+            "type": "claim"
+          },
+          {
+            "date": "TBA",
+            "amount": "30%",
+            "type": "claim"
+          },
+          {
+            "date": "TBA",
+            "amount": "30%",
+            "type": "claim"
+          },
+          {
+            "date": "TBA",
+            "amount": "30%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://www.battlesaga.io/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x6a6b675137102c1331e274d5d01eb7664268c93e",
+      "id": 32,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/jigen-logo.svg",
+      "listingDate": "16.02.2022",
+      "price": "0.06$",
+      "round": "Private",
+      "telegram": "https://t.me/jigenapp",
+      "title": "Jigen!",
+      "tokenId": "jigen",
+      "tokenName": "JIG",
+      "twitterPage": "https://twitter.com/jigenapp",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 02, 16",
+            "amount": "7,5%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 03, 16",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 12, 16",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://jigen.app/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "_blank",
+      "id": 33,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/nakamoto-logo.png",
+      "listingDate": "",
+      "price": "5000$",
+      "round": "NFT",
+      "telegram": "https://t.me/NakamotoGames",
+      "title": "Nakamoto Games",
+      "tokenId": "",
+      "tokenName": "NAKA",
+      "twitterPage": "https://twitter.com/NakamotoGames",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://nakamoto.games/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "https://www.dextools.io/app/bsc/pair-explorer/0x88c9bf5e334e2591c6a866d5e20683e31226be3d",
+      "id": 34,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/ageofgods-logo.png",
+      "listingDate": "29.12.2021",
+      "price": "0.1$",
+      "round": "Strategic",
+      "telegram": "https://t.me/ageofgodsnet",
+      "title": "AgeOfGods",
+      "tokenId": "ageofgods",
+      "tokenName": "AOG",
+      "twitterPage": "https://twitter.com/AgeOfGodsnet",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 12, 29",
+            "amount": "10%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 01, 29",
+            "amount": "linear",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 08, 29",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://vesting.ageofgods.net/"
+      },
+      "webPage": "https://ageofgods.net/"
+    },
+    {
+      "chain": "",
+      "chart": "_blank",
+      "id": 35,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/fancybearsmetaverse-logo.png",
+      "listingDate": "",
+      "price": "612$",
+      "round": "NFT",
+      "telegram": "_blank",
+      "title": "Fancy Bears Metaverse NFT Sale",
+      "tokenId": "",
+      "tokenName": "",
+      "twitterPage": "https://twitter.com/FancyBearsMeta",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://www.fancybearsmetaverse.com/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "_blank",
+      "id": 36,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/seor-logo.png",
+      "listingDate": "TBA",
+      "price": "0.045$",
+      "round": "Public",
+      "telegram": "https://t.me/SeorGroup",
+      "title": "SEOR",
+      "tokenId": "",
+      "tokenName": "SEOR",
+      "twitterPage": "https://twitter.com/SEOR001",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2021, 11, 28",
+            "amount": "33,3%",
+            "type": "claim"
+          },
+          {
+            "date": "2021, 12, 28",
+            "amount": "33,3%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 01, 28",
+            "amount": "33,3%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://seor.io/"
+    },
+    {
+      "chain": "Fantom",
+      "chart": "https://www.dextools.io/app/fantom/pair-explorer/0x84fc84b998a01e34c8a9714a600aebde8b4cc671",
+      "id": 37,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/onering-logo.png",
+      "listingDate": "29.01.2022",
+      "price": "0.25$",
+      "round": "Private",
+      "telegram": "https://t.me/OneRing_Finance",
+      "title": "Onering Finance",
+      "tokenId": "onering",
+      "tokenName": "RING",
+      "twitterPage": "https://twitter.com/Onering_Finance",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 03, 01",
+            "amount": "linear",
+            "type": "claim"
+          },
+          {
+            "date": "2023, 03, 01",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://www.onering.finance/"
+    },
+    {
+      "chain": "Fantom",
+      "chart": "https://www.dextools.io/app/fantom/pair-explorer/0x84fc84b998a01e34c8a9714a600aebde8b4cc671",
+      "id": 38,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/onering-logo.png",
+      "listingDate": "29.01.2022",
+      "price": "0.50$",
+      "round": "IDO & Bonus round IDO",
+      "telegram": "https://t.me/OneRing_Finance",
+      "title": "Onering Finance",
+      "tokenId": "onering",
+      "tokenName": "RING",
+      "twitterPage": "https://twitter.com/Onering_Finance",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 01, 29",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2023, 01, 30",
+            "amount": "linear",
+            "type": "claim"
+          },
+          {
+            "date": "2023, 05, 30",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://app.synapse.network/vesting"
+      },
+      "webPage": "https://www.onering.finance/"
+    },
+    {
+      "chain": "Moonbeam",
+      "chart": "https://dexscreener.com/moonbeam/0x99588867e817023162f4d4829995299054a5fc57",
+      "id": 39,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/beamswap-logo.png",
+      "listingDate": "18.01.2022",
+      "price": "0.02$",
+      "round": "IDO",
+      "telegram": "https://t.me/Beamswap",
+      "title": "Beamswap",
+      "tokenId": "beamswap",
+      "tokenName": "GLINT",
+      "twitterPage": "https://twitter.com/Beamswapio",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 01, 18",
+            "amount": "30%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 01, 19",
+            "amount": "lineary",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 03, 19",
+            "amount": "",
+            "type": "vesting end"
+          }
+        ],
+        "vestingPage": "https://app.beamswap.io/vesting"
+      },
+      "webPage": "https://beamswap.io/"
+    },
+    {
+      "chain": "ERC-20",
+      "chart": "_blank",
+      "id": 40,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/animal-logo2.png",
+      "listingDate": "TBA",
+      "price": "0.0045$",
+      "round": "IDO",
+      "telegram": "https://t.me/animalconcertsofficial",
+      "title": "Animal Concerts",
+      "tokenId": "",
+      "tokenName": "ANML",
+      "twitterPage": "https://twitter.com/animalconcerts",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://animalconcerts.com/"
+    },
+    {
+      "chain": "Polygon",
+      "chart": "_blank",
+      "id": 41,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/kitsumon-logo.webp",
+      "listingDate": "",
+      "price": "175$",
+      "round": "INO",
+      "telegram": "https://t.me/Kitsumon",
+      "title": "Kitsumon",
+      "tokenId": "",
+      "tokenName": "",
+      "twitterPage": "https://twitter.com/kitsumonworld",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://kitsumon.com/"
+    },
+    {
+      "chain": "Moonriver",
+      "chart": "_blank",
+      "id": 42,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/amara-logo.png",
+      "listingDate": "TBA",
+      "price": "0,5$",
+      "round": "Public",
+      "telegram": "https://t.me/AmaraFinance",
+      "title": "Amara Finance",
+      "tokenId": "",
+      "tokenName": "MARA",
+      "twitterPage": "https://twitter.com/AmaraFinance",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://www.amara.link/"
+    },
+    {
+      "chain": "TBA",
+      "chart": "_blank",
+      "id": 43,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/dreem-logo.png",
+      "listingDate": "TBA",
+      "price": "TBA",
+      "round": "Public",
+      "telegram": "_blank",
+      "title": "Dreem",
+      "tokenId": "",
+      "tokenName": "_blank",
+      "twitterPage": "_blank",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "_blank"
+    },
+    {
+      "chain": "Solana",
+      "chart": "_blank",
+      "id": 44,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/plutonians-logo.jpg",
+      "listingDate": "TBA",
+      "price": "0,1",
+      "round": "Private",
+      "telegram": "https://t.me/plutoniansgame",
+      "title": "Plutonians",
+      "tokenId": "",
+      "tokenName": "PLD",
+      "twitterPage": "https://twitter.com/plutoniansgame",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://plutonians.tech/"
+    },
+    {
+      "chain": "",
+      "chart": "_blank",
+      "id": 45,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/acknoledger-logo.png",
+      "listingDate": "",
+      "price": "444$",
+      "round": "INO",
+      "telegram": "https://t.me/acknoledgercommunity",
+      "title": "Acknoledger",
+      "tokenId": "",
+      "tokenName": "",
+      "twitterPage": "https://twitter.com/acknoledger",
+      "vesting": {
+        "claimData": [
+          {
+            "date": null,
+            "amount": null,
+            "type": null
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://acknoledger.com/"
+    },
+    {
+      "chain": "BSC",
+      "chart": "_blank",
+      "id": 46,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/teneo-logo.png",
+      "listingDate": "22.02.2022",
+      "price": "0,095$",
+      "round": "Public",
+      "telegram": "https://t.me/TeneoFinance",
+      "title": "Teneo",
+      "tokenId": "",
+      "tokenName": "TEN",
+      "twitterPage": "https://twitter.com/TeneoFinance",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "2022, 02, 22",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 03, 08",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 03, 22",
+            "amount": "25%",
+            "type": "claim"
+          },
+          {
+            "date": "2022, 04, 05",
+            "amount": "25%",
+            "type": "claim"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://teneo.finance/"
+    },
+    {
+      "chain": "TBA",
+      "chart": "_blank",
+      "id": 47,
+      "imageUrl": "https://launchpadcommon.blob.core.windows.net/images/crypt0_mayhem-logo.jpg",
+      "listingDate": "TBA",
+      "price": "TBA",
+      "round": "TBA",
+      "telegram": "https://t.me/Crypt0MayhemOf",
+      "title": "Crypt0 Mayhem",
+      "tokenId": "",
+      "tokenName": "",
+      "twitterPage": "https://twitter.com/CryptoMayhem_io",
+      "vesting": {
+        "claimData": [
+          {
+            "date": "TBA",
+            "amount": "TBA",
+            "type": "TBA"
+          }
+        ],
+        "vestingPage": null
+      },
+      "webPage": "https://crypt0mayhem.io/"
+    }
+  ]
+}

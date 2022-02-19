@@ -2,11 +2,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import React from "react";
 import { Grid } from "@mui/material";
-import CryptoCard from "./CryptoCard";
+import CryptoCard from "../CryptoCard";
 
-import { fetchProductData } from "./store/products-actions";
-import { sendWalletData } from "./store/wallet-actions";
-import { fetchWalletData } from "./store/wallet-actions";
+import { fetchProductData } from "../store/products-actions";
+import { sendWalletData } from "../store/wallet-actions";
+import { fetchWalletData } from "../store/wallet-actions";
 
 const Content = () => {
   const dispatch = useDispatch();
@@ -25,6 +25,7 @@ const Content = () => {
   const wallet = useSelector((state) => {
     return state.wallet;
   });
+  const isAuth = useSelector((state) => state.auth.isLoggedIn);
 
   useEffect(() => {
     if (wallet.changed) {
@@ -34,10 +35,12 @@ const Content = () => {
 
   useEffect(() => {
     if (isInitial) {
+      if (isAuth) {
+        dispatch(fetchWalletData());
+      }
       dispatch(fetchProductData());
-      dispatch(fetchWalletData());
     }
-  }, [dispatch, isInitial]);
+  }, [dispatch, isInitial, isAuth]);
 
   return (
     <Grid item container>
@@ -57,7 +60,7 @@ const Content = () => {
             <CryptoCard
               key={data.id}
               data={data}
-              inWallet={inWallet ? false : true}
+              inWallet={inWallet ? true : false}
             />
           );
         })}

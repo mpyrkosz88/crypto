@@ -1,6 +1,6 @@
 import Layout from "./Layout/Layout";
-import Content from "./Content";
-import Wallet from "./Wallet";
+import Content from "./Containers/Content";
+import Wallet from "./Containers/Wallet";
 import Login from "./Login";
 import Register from "./Register";
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -18,7 +18,6 @@ function App() {
     const localId = localStorage.getItem("localId");
     dispatch(authActions.checkAuth({ token, localId }));
   }, [dispatch]);
-
   let routes = (
     <Routes>
       <Route path="/home" element={<Content />} />

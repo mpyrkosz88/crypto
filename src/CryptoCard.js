@@ -24,6 +24,7 @@ import AssessmentIcon from "@mui/icons-material/Assessment";
 import { walletActions } from "./store/wallet-slice";
 import { useSelector } from "react-redux";
 
+import VestingPage from "./VestingPage";
 const CryptoCard = (props) => {
   const {
     id,
@@ -38,8 +39,8 @@ const CryptoCard = (props) => {
     twitterPage,
     telegram,
     chart,
-    vesting,
     tokenId,
+    vesting,
   } = props.data;
 
   const dispatch = useDispatch();
@@ -49,13 +50,20 @@ const CryptoCard = (props) => {
 
   const [currentPrice, setCurrentPrice] = useState("");
 
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const addToWallet = () => {
-    // dispatch(productsActions.addItemToWallet({ id }));
     dispatch(walletActions.addItemToWallet(props.data));
   };
 
   const removeFromWallet = () => {
-    // dispatch(productsActions.removeItemFromWallet({ id }));
     dispatch(walletActions.removeItemFromWallet({ id }));
   };
 
@@ -71,7 +79,9 @@ const CryptoCard = (props) => {
       .then((response) => {
         if (response.ok) {
           return response.json().then((data) => {
-            setCurrentPrice(data[tokenId].usd);
+            if (tokenId) {
+              setCurrentPrice(data[tokenId].usd);
+            }
           });
         } else {
           return response.json().then((data) => {
@@ -92,22 +102,22 @@ const CryptoCard = (props) => {
     walletButton = (
       <Button
         variant="contained"
-        color="primary"
-        onClick={addToWallet}
+        color="secondary"
+        onClick={removeFromWallet}
         style={{ marginBottom: "12px" }}
       >
-        Add to wallet
+        Remove from wallet
       </Button>
     );
   } else {
     walletButton = (
       <Button
         variant="contained"
-        color="secondary"
-        onClick={removeFromWallet}
+        color="primary"
+        onClick={addToWallet}
         style={{ marginBottom: "12px" }}
       >
-        Remove from wallet
+        Add to wallet
       </Button>
     );
   }
@@ -188,22 +198,21 @@ const CryptoCard = (props) => {
         </CardContent>
         <CardActions>
           <Grid container justifyContent="space-evenly">
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginBottom: "12px" }}
-            >
-              <Link
-                href={vesting}
-                target="_blank"
-                color="inherit"
-                underline="none"
+            {vesting ? (
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginBottom: "12px" }}
+                onClick={handleClickOpen}
               >
                 Vesting
-              </Link>
-            </Button>
+              </Button>
+            ) : null}
             {isAuth ? walletButton : null}
           </Grid>
+          {vesting ? (
+            <VestingPage open={open} onClose={handleClose} vesting={vesting} />
+          ) : null}
         </CardActions>
       </Card>
     </Grid>
