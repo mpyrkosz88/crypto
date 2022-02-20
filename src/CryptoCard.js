@@ -22,6 +22,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 
 import { walletActions } from "./store/wallet-slice";
+import { checkCurrentPrice } from "./store/products-actions";
 import { useSelector } from "react-redux";
 
 import VestingPage from "./VestingPage";
@@ -67,34 +68,13 @@ const CryptoCard = (props) => {
     dispatch(walletActions.removeItemFromWallet({ id }));
   };
 
-  const checkPrice = () => {
-    let url = `https://api.coingecko.com/api/v3/simple/price?ids=${tokenId}%2C&vs_currencies=usd%2C`;
-    const requestOptions = {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-    fetch(url, requestOptions)
-      .then((response) => {
-        if (response.ok) {
-          return response.json().then((data) => {
-            if (tokenId) {
-              setCurrentPrice(data[tokenId].usd);
-            }
-          });
-        } else {
-          return response.json().then((data) => {
-            console.log(data.error.message);
-          });
-        }
-      })
-      .catch((err) => console.log(err));
-  };
-
   useEffect(() => {
-    checkPrice();
-  }, []);
+    dispatch(checkCurrentPrice(tokenId)).then((response) => {
+      if (response.ok) {
+        setCurrentPrice(response.price);
+      }
+    });
+  });
 
   let walletButton;
 

@@ -20,7 +20,8 @@ const authSlice = createSlice({
     checkAuth(state, action) {
       const token = action.payload.token;
       const localId = action.payload.localId;
-      if (!token) {
+      const expirationDate = new Date(localStorage.getItem("expirationDate"));
+      if (!token || expirationDate < new Date()) {
         state.isLoggedIn = false;
         state.token = null;
         state.localId = null;

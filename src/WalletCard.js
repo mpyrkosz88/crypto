@@ -21,6 +21,7 @@ import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 
 import VestingPage from "./VestingPage";
 import { walletActions } from "./store/wallet-slice";
+import { checkCurrentPrice } from "./store/products-actions";
 
 const WalletCard = (props) => {
   const {
@@ -70,34 +71,13 @@ const WalletCard = (props) => {
     editHandler();
   };
 
-  const checkPrice = () => {
-    let url = `https://api.coingecko.com/api/v3/simple/price?ids=${tokenId}%2C&vs_currencies=usd%2C`;
-    const requestOptions = {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-    fetch(url, requestOptions)
-      .then((response) => {
-        if (response.ok) {
-          return response.json().then((data) => {
-            if (tokenId) {
-              setCurrentPrice(data[tokenId].usd);
-            }
-          });
-        } else {
-          return response.json().then((data) => {
-            console.log(data.error.message);
-          });
-        }
-      })
-      .catch((err) => console.log(err));
-  };
-
   useEffect(() => {
-    checkPrice();
-  }, []);
+    dispatch(checkCurrentPrice(tokenId)).then((response) => {
+      if (response.ok) {
+        setCurrentPrice(response.price);
+      }
+    });
+  });
 
   return (
     <Grid item xs={12} sm={6} md={4}>

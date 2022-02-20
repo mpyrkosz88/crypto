@@ -1,12 +1,14 @@
 import { Input, Grid, Button, Box } from "@mui/material";
 
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 
 import { useNavigate } from "react-router";
 
+import { sendRegisterData } from "./store/auth-actions";
+
 const Register = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [enteredEmail, setEnteredEmail] = useState("");
@@ -43,47 +45,14 @@ const Register = () => {
     checkFormIsValid();
   });
 
-  const register = async () => {
-    let url = process.env.REACT_APP_REGISTER_API;
-    const authData = {
-      email: enteredEmail,
-      password: enteredPassword,
-      returnSecureToken: true,
-    };
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(authData),
-    };
-
-    try {
-      const response = await fetch(url, requestOptions);
-      if (!response.ok) {
-        return response.json().then((data) => {
-          console.log(data.error.message);
-        });
+  const register = () => {
+    dispatch(sendRegisterData(enteredEmail, enteredPassword)).then(
+      (response) => {
+        if (response) {
+          navigate("/login");
+        }
       }
-      navigate("/login");
-      // return response.json().then((data) => {
-      //   const token = data.idToken;
-      //   const userId = data.localId;
-      //   fetch(
-      //     `https://crypto-vesting-default-rtdb.europe-west1.firebasedatabase.app/users.json?auth=` +
-      //       token,
-      //     {
-      //       method: "POST",
-      //       body: JSON.stringify({ userId: userId }),
-      //     }
-      //   )
-      //     .then((response) => response.json())
-      //     .then((json) => console.log(json))
-      //     .catch((err) => console.log(err));
-      // });
-    } catch (error) {
-      return error;
-    }
+    );
   };
 
   return (
