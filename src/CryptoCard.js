@@ -69,11 +69,13 @@ const CryptoCard = (props) => {
   };
 
   useEffect(() => {
-    dispatch(checkCurrentPrice(tokenId)).then((response) => {
-      if (response.ok) {
-        setCurrentPrice(response.price);
-      }
-    });
+    checkCurrentPrice(tokenId)
+      .then((response) => {
+        setCurrentPrice(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   });
 
   let walletButton;

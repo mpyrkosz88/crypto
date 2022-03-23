@@ -21,8 +21,8 @@ const Wallet = () => {
   // );
 
   useEffect(() => {
-    dispatch(fetchWalletData());
-  }, [dispatch]);
+    fetchWalletData();
+  });
 
   useEffect(() => {
     if (wallet.changed) {

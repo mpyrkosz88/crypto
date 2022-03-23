@@ -72,7 +72,7 @@ const WalletCard = (props) => {
   };
 
   useEffect(() => {
-    dispatch(checkCurrentPrice(tokenId)).then((response) => {
+    checkCurrentPrice(tokenId).then((response) => {
       if (response.ok) {
         setCurrentPrice(response.price);
       }

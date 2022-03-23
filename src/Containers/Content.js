@@ -36,11 +36,11 @@ const Content = () => {
   useEffect(() => {
     if (isInitial) {
       if (isAuth) {
-        dispatch(fetchWalletData());
+        fetchWalletData();
       }
-      dispatch(fetchProductData());
+      fetchProductData();
     }
-  }, [dispatch, isInitial, isAuth]);
+  }, [isInitial, isAuth]);
 
   return (
     <Grid item container>

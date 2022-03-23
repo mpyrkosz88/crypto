@@ -2,14 +2,11 @@ import { Input, Grid, Button, Box } from "@mui/material";
 
 import { useState, useEffect } from "react";
 
-import { useDispatch } from "react-redux";
-
 import { sendLoginData } from "./store/auth-actions";
 
 import { useNavigate } from "react-router";
 
 const Login = () => {
-  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [enteredEmail, setEnteredEmail] = useState("");
@@ -47,7 +44,7 @@ const Login = () => {
   });
 
   const login = () => {
-    dispatch(sendLoginData(enteredEmail, enteredPassword)).then((response) => {
+    sendLoginData(enteredEmail, enteredPassword).then((response) => {
       if (response) {
         navigate("/home");
       }
